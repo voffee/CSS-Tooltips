@@ -1,11 +1,18 @@
 
 /* Declaring Root Variables */
 :root {
+    --ribbon-color: #ED2939;
 
+    --dark-text-color: #36454F;
+
+    --page-background-color: #F0F0F0;
+
+    --box-color-1: #F96E7D;
+    --box-color-2: #E5D7BB;
+    --box-color-3: #8EB29A;
 }
 
 /* Global Reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,4 +21,37 @@
 
 body {
     
+}
+
+/* Font Utility Classes */
+.raleway-utility-small {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Ribbon Styling */
+.ribbon {
+    height: 35px;
+    width: 100%;
+    background-color: var(--ribbon-color);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 4px solid var(--dark-text-color);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Tooltip Styling */
+.tooltip-1 {
+    background-image: linear-gradient(45deg, var(--box-color-1), var(--box-color-2), var(--box-color-3));
+    height: 150px;
+    width: 150px;
+
+    & .tooltip-1-text {
+        color: var(--dark-text-color);
+    }
 }
