@@ -10,7 +10,7 @@
     <title>Tooltips</title>
 </head>
 <body>
-    <div class="ribbon">
+    <div class="ribbon raleway-utility-small">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 	    <path fill="currentColor" d="M5 20v-2h14v2zm0-3.5L3.725 8.475q-.05 0-.113.013T3.5 8.5q-.625 0-1.062-.438T2 7t.438-1.062T3.5 5.5t1.063.438T5 7q0 .175-.038.325t-.087.275L8 9l3.125-4.275q-.275-.2-.45-.525t-.175-.7q0-.625.438-1.063T12 2t1.063.438T13.5 3.5q0 .375-.175.7t-.45.525L16 9l3.125-1.4q-.05-.125-.088-.275T19 7q0-.625.438-1.063T20.5 5.5t1.063.438T22 7t-.437 1.063T20.5 8.5q-.05 0-.112-.012t-.113-.013L19 16.5zm1.7-2h10.6l.65-4.175l-2.625 1.15L12 6.9l-3.325 4.575l-2.625-1.15zm5.3 0" />
         </svg>
@@ -18,14 +18,20 @@
         <p>hello@example.com</p>
     </div>
     <main>
-        <div class="tooltip-1">
-            <span class="tooltip-1-text">Sample Text</span>
-        </div>
-        <div class="tooltip-2">
-            <span class="tooltip-2-text">Sample Text</span>
-        </div>
-        <div class="tooltip-3">
-            <span class="tooltip-3-text">Sample Text</span>
+        <div class="tooltip-container">
+            <div class="tooltip tooltip-1"> First Sin
+                <span class="tooltip-1-text raleway-utility-small">Mediocrity</span>
+            </div>
+            <div class="tooltip tooltip-2"> Second Sin
+                <span class="tooltip-2-text raleway-utility-small">Burnout</span>
+            </div>
+            <div class="tooltip tooltip-3"> Third Sin
+                <span class="tooltip-3-text raleway-utility-small">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M7 2H5a3.5 3.5 0 1 0 0 7h2v3H2.5v2H7v2h2v-2h2a3.5 3.5 0 1 0 0-7H9V4h4.5V2H9V0H7zm2 7h2a1.5 1.5 0 0 1 0 3H9zM7 7H5a1.5 1.5 0 1 1 0-3h2z" />
+                    </svg>
+                </span>
+            </div>
         </div>
     </main>
 

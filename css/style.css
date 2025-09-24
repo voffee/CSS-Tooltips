@@ -26,6 +26,10 @@ body {
 /* Font Utility Classes */
 .raleway-utility-small {
     font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
 }
 
 /* Ribbon Styling */
@@ -33,7 +37,7 @@ body {
     height: 35px;
     width: 100%;
     background-color: var(--ribbon-color);
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     padding-left: 10px;
     padding-right: 10px;
     border-bottom: 4px solid var(--dark-text-color);
@@ -45,13 +49,71 @@ body {
 
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 100px;
+    background-color: cyan;
+}
+
 /* Tooltip Styling */
-.tooltip-1 {
+.tooltip {
     background-image: linear-gradient(45deg, var(--box-color-1), var(--box-color-2), var(--box-color-3));
     height: 150px;
     width: 150px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--dark-text-color);
+    border-radius: 5%;
+
+    position: relative;
 
     & .tooltip-1-text {
+        position: absolute;
+        visibility: hidden;
+        top: 50px;
+        right: 200px;
         color: var(--dark-text-color);
+    }
+
+    & .tooltip-2-text {
+        visibility: hidden;
+        color: var(--dark-text-color);
+    }
+
+    & .tooltip-3-text {
+        visibility: hidden;
+        color: var(--dark-text-color);
+    }
+}
+
+/* Hover States */
+.tooltip-1:hover {
+    & .tooltip-1-text {
+        visibility: visible;
+    }
+}
+
+.tooltip-2:hover {
+    & .tooltip-2-text {
+        visibility: visible;
+    }
+}
+
+.tooltip-3:hover {
+    & .tooltip-3-text {
+        visibility: visible;
     }
 }
