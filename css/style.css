@@ -32,6 +32,14 @@ body {
     font-style: normal;
 }
 
+.raleway-utility-large {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 22px;
+    font-style: normal;
+}
+
 /* Ribbon Styling */
 .ribbon {
     height: 35px;
@@ -77,25 +85,57 @@ main {
     justify-content: center;
     border: 2px solid var(--dark-text-color);
     border-radius: 5%;
-
     position: relative;
 
     & .tooltip-1-text {
-        position: absolute;
         visibility: hidden;
-        top: 50px;
-        right: 200px;
+        height: 30px;
+        width: 110px;
+        text-align: center;
+        top: 20px;
+        right: 170px;
         color: var(--dark-text-color);
+        background-color: hotpink;
+        opacity: 0.95;
+        box-shadow: 5px 5px 10px 1px greenyellow;
+        border-radius: 5px;
+        border: 2px solid var(--dark-text-color);
+        position: absolute;
     }
 
     & .tooltip-2-text {
         visibility: hidden;
         color: var(--dark-text-color);
+        height: 30px;
+        width: 110px;
+        text-align: center;
+        top: 160px;
+        right: 20px;
+        color: var(--dark-text-color);
+        background-color: hotpink;
+        opacity: 0.95;
+        box-shadow: 5px 5px 10px 1px greenyellow;
+        border-radius: 5px;
+        border: 2px solid var(--dark-text-color);
+        position: absolute;
+        
     }
 
     & .tooltip-3-text {
         visibility: hidden;
         color: var(--dark-text-color);
+        height: 30px;
+        width: 110px;
+        text-align: center;
+        top: -50px;
+        right: 20px;
+        color: var(--dark-text-color);
+        background-color: hotpink;
+        opacity: 0.95;
+        box-shadow: 5px 5px 10px 1px greenyellow;
+        border-radius: 5px;
+        border: 2px solid var(--dark-text-color);
+        position: absolute;
     }
 }
 
