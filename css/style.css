@@ -69,7 +69,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 100px;
-    background-color: cyan;
 }
 
 /* Tooltip Styling */
@@ -85,6 +84,7 @@ main {
     justify-content: center;
     border: 2px solid var(--dark-text-color);
     border-radius: 5%;
+    cursor: pointer;
     position: relative;
 
     & .tooltip-1-text {
@@ -155,5 +155,19 @@ main {
 .tooltip-3:hover {
     & .tooltip-3-text {
         visibility: visible;
+    }
+}
+
+/* Media Query */
+@media screen and (max-width: 430px){
+
+    .tooltip-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 100px;
+    }
+    .ribbon {
+        margin-bottom: 30px;
     }
 }
